@@ -3,10 +3,10 @@ package initialization
 import (
 	"database/sql"
 	"fmt"
+	_ "github.com/lib/pq"
 	"gopkg.in/yaml.v2"
 	"os"
 	"simple-crud/config"
-	_ "github.com/lib/pq"
 )
 
 //reading config
