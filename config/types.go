@@ -3,7 +3,6 @@ package config
 type Config struct {
 	CfgDB CfgDB    `yaml:"db"`
 	Http  CfgHTTP  `yaml:"http"`
-	Other CfgOther `yaml:"other"`
 }
 
 type CfgDB struct {
@@ -16,8 +15,4 @@ type CfgDB struct {
 
 type CfgHTTP struct {
 	Port string `yaml:"port"`
-}
-
-type CfgOther struct {
-	PageSize uint32 `yaml:"pagesize"`
 }

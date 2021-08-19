@@ -6,6 +6,8 @@ import (
 	sea "simple-crud/serviceexampleapi"
 )
 
+const pageSize = 10
+
 type Obj struct {
 	sea.UnimplementedServiceExampleServiceServer
 	CFG config.Config

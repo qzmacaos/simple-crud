@@ -5,23 +5,16 @@ import (
 	"fmt"
 	_ "github.com/lib/pq"
 	"gopkg.in/yaml.v2"
-	"os"
+	"io/ioutil"
 	"simple-crud/config"
 )
 
 //reading config
-func InitCfg() (config.Config, error)  {
+func InitCfg(pathConfig string) (config.Config, error)  {
 	var (
-		configFileData []byte
 		cfg config.Config
 	)
-	file, err := os.Open("config/config.yml")
-	defer file.Close()
-	if err != nil {
-		return cfg, err
-	}
-
-	_, err = file.Read(configFileData)
+	configFileData, err := ioutil.ReadFile(pathConfig)
 	if err != nil {
 		return cfg, err
 	}
