@@ -1,0 +1,5 @@
+production:
+  dialect: postgres
+  datasource: host=localhost dbname=simple_crud sslmode=disable user=adm password=pswd
+  dir: .
+  table: migrations
