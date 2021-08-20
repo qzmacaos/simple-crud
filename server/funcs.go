@@ -7,6 +7,7 @@ import (
 	"strconv"
 )
 
+//itemToRpcItem - convert inner type to represented in grps one
 func itemToRpcItem(in item.Item) sea.Item {
 
 	id := strconv.FormatInt(in.Id, 10)
@@ -20,6 +21,7 @@ func itemToRpcItem(in item.Item) sea.Item {
 	}
 }
 
+//userToRpcUser - convert inner type to represented in grps one
 func userToRpcUser(in user.User) sea.User{
 	id := strconv.FormatInt(in.Id, 10)
 	user := sea.User{
