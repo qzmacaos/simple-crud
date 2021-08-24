@@ -6,7 +6,7 @@ import (
 	sea "simple-crud/serviceexampleapi"
 )
 
-
+// Update - update user
 func Update(db *sql.DB, id int64, name string, age int32, userType sea.UserType) (User, error) {
 
 	log.Println("user Update")

@@ -8,6 +8,7 @@ import (
 	"strconv"
 )
 
+// CreateUser - proceed CreateUser request
 func (s *Obj) CreateUser(ctx context.Context, in *sea.CreateUserRequest) (*sea.User, error) {
 	var(
 		name string
@@ -32,7 +33,7 @@ func (s *Obj) CreateUser(ctx context.Context, in *sea.CreateUserRequest) (*sea.U
 	return &out, nil
 }
 
-
+// UpdateUser - proceed UpdateUser request
 func (s *Obj) UpdateUser(ctx context.Context, in *sea.UpdateUserRequest) (*sea.User, error) {
 	var(
 		id int64
@@ -61,6 +62,7 @@ func (s *Obj) UpdateUser(ctx context.Context, in *sea.UpdateUserRequest) (*sea.U
 	return &out, nil
 }
 
+// DeleteUser - proceed DeleteUser request
 func (s *Obj) DeleteUser(ctx context.Context, in *sea.DeleteUserRequest) (*sea.DeleteUserResponse, error){
 
 
@@ -80,6 +82,7 @@ func (s *Obj) DeleteUser(ctx context.Context, in *sea.DeleteUserRequest) (*sea.D
 	return &sea.DeleteUserResponse{}, nil
 }
 
+// GetUser - proceed GetUser request
 func (s *Obj) GetUser(ctx context.Context, in *sea.GetUserRequest) (*sea.User, error) {
 	var(
 		id int64
@@ -100,6 +103,7 @@ func (s *Obj) GetUser(ctx context.Context, in *sea.GetUserRequest) (*sea.User, e
 	return &out, nil
 }
 
+// ListUser - proceed ListUser request
 func (s *Obj) ListUser(ctx context.Context, in *sea.ListUserRequest) (*sea.ListUserResponse, error){
 
 	var(
@@ -128,6 +132,7 @@ func (s *Obj) ListUser(ctx context.Context, in *sea.ListUserRequest) (*sea.ListU
 	return &sea.ListUserResponse{Users: out}, nil
 }
 
+// CreateItem - proceed CreateItem request
 func (s *Obj) CreateItem(ctx context.Context, in *sea.CreateItemRequest) (*sea.Item, error) {
 
 	var(
@@ -151,6 +156,7 @@ func (s *Obj) CreateItem(ctx context.Context, in *sea.CreateItemRequest) (*sea.I
 	return &out, nil
 }
 
+// UpdateItem - proceed UpdateItem request
 func (s *Obj) UpdateItem(ctx context.Context, in *sea.UpdateItemRequest) (*sea.Item, error) {
 
 	var(

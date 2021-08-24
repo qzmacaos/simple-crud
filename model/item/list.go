@@ -5,6 +5,7 @@ import (
 	"log"
 )
 
+// ListItem - get list of items attached to users
 func ListItem(db *sql.DB, userId int64)  ([]*Item, error){
 
 	log.Println("item ListItem")

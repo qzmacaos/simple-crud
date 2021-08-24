@@ -5,6 +5,7 @@ import (
 	"log"
 )
 
+// Delete - delete user
 func Delete(db *sql.DB, id int64)error{
 
 	log.Println("user Delete")

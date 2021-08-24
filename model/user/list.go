@@ -5,6 +5,7 @@ import (
 	"log"
 )
 
+// List - get list of users with offset and limit
 func List(db *sql.DB, offset, limit uint32) ([]User, error) {
 
 	log.Println("user List")

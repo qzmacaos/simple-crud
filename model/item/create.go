@@ -7,7 +7,7 @@ import (
 )
 
 
-
+// Create - create item
 func Create(db *sql.DB, name string,userId int64) (Item ,error) {
 
 	log.Println("item Create")

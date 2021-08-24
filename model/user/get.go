@@ -7,7 +7,7 @@ import (
 	"simple-crud/model/item"
 )
 
-
+// Get - get user by id
 func Get(db *sql.DB, id int64) (User, error) {
 
 	log.Println("user Get")

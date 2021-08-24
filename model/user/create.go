@@ -7,7 +7,7 @@ import (
 	sea "simple-crud/serviceexampleapi"
 )
 
-
+// Create - create user
 func Create(db *sql.DB, name string, age int32, userType sea.UserType) (User, error) {
 
 	log.Println("user Create")

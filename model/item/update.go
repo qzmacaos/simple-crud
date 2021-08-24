@@ -6,6 +6,7 @@ import (
 )
 
 
+// Update - update item
 func Update(db *sql.DB, id int64, name string) (Item, error)  {
 
 	log.Println("item Update")
